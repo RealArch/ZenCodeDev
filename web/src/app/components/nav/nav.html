@@ -1,0 +1,27 @@
+<nav class="navbar bg-neutral text-white fixed z-1000">
+  <div class="container mx-auto flex items-center justify-between
+              h-12 md:h-16 py-4">
+    <!-- Logo -->
+     <a class="h-full" routerLink="">
+        <img src="img/logos/logo-dark.svg" alt="ZenCode Logo" class="h-full">
+     </a>
+
+
+    <!-- Menú -->
+    <ul class="hidden md:flex space-x-6 text-lg">
+      <li><a routerLink="/" class="hover:text-gray-300">Inicio</a></li>
+      <li><a routerLink="/services" class="hover:text-gray-300">Servicios</a></li>
+      <li><a routerLink="/contact" class="hover:text-gray-300">Contacto</a></li>
+    </ul>
+
+    <!-- Botón menú móvil (visible solo en móvil) -->
+    <button class="md:hidden focus:outline-none">
+      <!-- Icono hamburguesa simple -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" 
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+</nav>

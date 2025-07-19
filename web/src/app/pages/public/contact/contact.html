@@ -1,0 +1,123 @@
+<!-- Assuming app-header-section is also standalone and uses Tailwind/DaisyUI -->
+<!-- <app-header-section [title]="'Contacto'" [breadcrumb]="breadcrumb()" [background]="background()"></app-header-section> -->
+<div>
+    <app-page-header title="Contacto" [breadcrumb]="breadcrumb()" [background]="background()"></app-page-header>
+
+</div>
+<section id="contact" class="py-10">
+    <div class="container mx-auto px-4 my-10">
+
+        <form [formGroup]="contactForm">
+            <div class="flex justify-center mb-6">
+                <div class="w-full lg:w-7/12 text-center mb-10">
+                    <h2 class="text-4xl font-bold mb-3">
+                        Contacta con nosotros
+                    </h2>
+                    <p class="text-lg text-gray-700">
+                        Estamos disponibles las 24 horas del día, los 7 días de la semana por correo electrónico
+                        y teléfono. También puedes hacer una pregunta sobre nuestros servicios a través de
+                        nuestro formulario de contacto.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4 ">
+                <div class="w-full lg:w-5/12 px-4 flex items-center justify-center items-center mb-8 lg:mb-0">
+                    <img class="max-w-full h-auto" src="img/contact_image.svg" alt="Contact image">
+                </div>
+                <div class="w-full lg:w-7/12 px-4">
+                    <div class="flex flex-wrap -mx-4 ">
+
+                        <div class="w-full lg:w-6/12 px-4 mb-4">
+                            <div class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Nombre</span>
+                                </label>
+                                <input type="text" maxlength="25" placeholder="Ej. Jhon"
+                                    class="input input-bordered w-full rounded-md" #name formControlName="name">
+                                <label class="label">
+                                    <span class="label-text-alt text-right w-full">{{name.value.length || 0}}/25</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-6/12 px-4 mb-4">
+                            <div class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Apellido</span>
+                                </label>
+                                <input type="text" maxlength="25" placeholder="Ej. Smith"
+                                    class="input input-bordered w-full rounded-md" #lastname formControlName="lastname">
+                                <label class="label">
+                                    <span class="label-text-alt text-right w-full">{{lastname.value.length ||
+                                        0}}/25</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-6/12 px-4 mb-4">
+                            <div class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input type="email" maxlength="100" placeholder="example@gmail.com"
+                                    class="input input-bordered w-full rounded-md" #email formControlName="email">
+                                <label class="label">
+                                    <span class="label-text-alt text-right w-full">{{email.value.length ||
+                                        0}}/100</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-6/12 px-4 mb-4">
+                            <div class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Teléfono</span>
+                                </label>
+                                <input type="text" maxlength="20" placeholder="+1 407 702 3859"
+                                    class="input input-bordered w-full rounded-md" #phone formControlName="phone">
+                                <label class="label">
+                                    <span class="label-text-alt text-right w-full">{{phone.value.length ||
+                                        0}}/20</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="w-full px-4 mb-4">
+                            <div class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Descripción</span>
+                                </label>
+                                <textarea rows="9" maxlength="1000" placeholder="Cuéntanos... ¿cómo te podemos ayudar?"
+                                    class="textarea textarea-bordered h-32 w-full rounded-md" #description
+                                    formControlName="description"></textarea>
+                                <label class="label">
+                                    <span class="label-text-alt text-right w-full">{{description.value.length ||
+                                        0}}/1000</span>
+                                </label>
+                            </div>
+                        </div>
+                        @if (!contactForm.valid) {
+                        <div class="w-full text-right pt-2 px-4">
+                            <span class="text-error text-sm">Completa todos los campos correctamente para desbloquear
+                                el botón de enviar.
+                            </span>
+                        </div>
+                        }
+
+                        <div class="w-full flex justify-end mt-6 px-4">
+                            <button class="btn btn-primary w-28 rounded-md" [disabled]="!contactForm.valid || sending()"
+                                (click)="sendMail(contactForm.value)">
+                                @if (!sending()) {
+
+                                <span>Enviar</span>
+
+                                } @else {
+
+                                <span class="loading loading-spinner loading-sm"></span>
+
+                                }
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

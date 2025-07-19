@@ -1,0 +1,49 @@
+#header {
+    height: 450px;
+    color: var(--ion-color-light);
+    background-position: right;
+    background-size: cover;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.breadcrumb {
+    li {
+        a {
+            text-decoration: none;
+            color: var(--ion-color-secondary);
+        }
+    }
+}
+
+.active {
+    pointer-events: none;
+    color: var(--ion-color-light)!important;
+}
+
+/* Extra pequeño (xs) */
+@media (max-width: 575.98px) {
+    /* Agrega aquí tus estilos para dispositivos con ancho menor a 576px */
+}
+
+/* Pequeño (sm) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Agrega aquí tus estilos para dispositivos con ancho entre 576px y 767.98px */
+}
+
+/* Mediano (md) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Agrega aquí tus estilos para dispositivos con ancho entre 768px y 991.98px */
+}
+
+/* Grande (lg) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Agrega aquí tus estilos para dispositivos con ancho entre 992px y 1199.98px */
+}
+
+/* Extra grande (xl) */
+@media (min-width: 1200px) {
+    /* Agrega aquí tus estilos para dispositivos con ancho igual o mayor a 1200px */
+}

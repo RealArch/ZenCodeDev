@@ -1,0 +1,32 @@
+<header id="header" class="relative h-[250px] bg-cover bg-center bg-no-repeat flex items-center" [ngStyle]="{'background-image': 'linear-gradient(to right,
+                        rgba(64, 64, 63, 0.8),
+                        rgba(64, 64, 63, 0) 60%),
+                    url(' +background+')'}">
+
+    <div class="absolute inset-0"></div>
+    <div class="container mx-auto h-full px-4 relative z-10">
+        <div class="flex h-full items-center">
+            <div class="pt-5 text-white">
+                <h1 class="text-4xl font-bold">{{ title }}</h1>
+                <div class="mt-2">
+                    <ol class="flex text-sm space-x-2">
+                        @for (item of breadcrumb; track $index; let i = $index) {
+                        <li class="flex items-center">
+                            <a [routerLink]="item.link" [ngClass]="{
+                                'text-white hover:underline': i !== breadcrumb.length - 1,
+                                'text-gray-400 cursor-default': i === breadcrumb.length - 1
+                                }">
+                                {{ item.name }}
+                            </a>
+                            @if (i < breadcrumb.length - 1) { <span class="ml-2 text-gray-500">/</span>
+                                }
+
+                        </li>
+                        }
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

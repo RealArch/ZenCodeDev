@@ -1,0 +1,76 @@
+
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+@use "tailwindcss";
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+
+  // Default the application to a light color theme. This can be changed to
+  // `dark` to enable the dark color theme, or to `light dark` to defer to the
+  // user's system settings.
+  color-scheme: light;
+
+  // Set a default background, font and text colors for the application using
+  // Angular Material's system-level CSS variables. Learn more about these
+  // variables at https://material.angular.dev/guide/system-variables
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+}
+
+
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+    name: "zencodeTheme";
+    default: false;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(98% 0 0);
+    --color-base-200: #ededed;
+    --color-base-300: oklch(92% 0.004 286.32);
+    --color-base-content: oklch(21% 0.006 285.885);
+    --color-primary: #7caca0;
+    --color-primary-content: #ffffff;
+    --color-secondary: oklch(55% 0.288 302.321);
+    --color-secondary-content: oklch(97% 0.014 308.299);
+    --color-accent: oklch(28% 0.109 3.907);
+    --color-accent-content: oklch(98% 0.031 120.757);
+    --color-neutral:  #40403f;
+    --color-neutral-content: oklch(98% 0 0);
+    --color-info: oklch(48% 0.243 264.376);
+    --color-info-content: oklch(97% 0.014 254.604);
+    --color-success: oklch(76% 0.233 130.85);
+    --color-success-content: oklch(98% 0.031 120.757);
+    --color-warning: oklch(95% 0.045 203.388);
+    --color-warning-content: oklch(98% 0.016 73.684);
+    --color-error: oklch(65% 0.241 354.308);
+    --color-error-content: oklch(97% 0.014 343.198);
+    --radius-selector: 1rem;
+    --radius-field: 2rem;
+    --radius-box: 2rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 2px;
+    --depth: 1;
+    --noise: 0;
+}
+
+
+
+
+.container{
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
