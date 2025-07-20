@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButton } from '@angular/material/button'
 @Component({
   selector: 'app-nav',
-  imports: [RouterLink],
+  imports: [RouterLink, MatMenuModule, MatButton],
   templateUrl: './nav.html',
   styleUrl: './nav.scss'
 })

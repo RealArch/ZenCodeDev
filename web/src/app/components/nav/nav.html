@@ -2,26 +2,41 @@
   <div class="container mx-auto flex items-center justify-between
               h-12 md:h-16 py-4">
     <!-- Logo -->
-     <a class="h-full" routerLink="">
-        <img src="img/logos/logo-dark.svg" alt="ZenCode Logo" class="h-full">
-     </a>
+    <a class="h-full" routerLink="">
+      <img src="img/logos/logo-dark.svg" alt="ZenCode Logo" class="h-full">
+    </a>
 
 
     <!-- Menú -->
-    <ul class="hidden md:flex space-x-6 text-lg">
+    <ul class="hidden md:flex space-x-6 text-lg items-center">
       <li><a routerLink="/" class="hover:text-gray-300">Inicio</a></li>
       <li><a routerLink="/services" class="hover:text-gray-300">Servicios</a></li>
       <li><a routerLink="/contact" class="hover:text-gray-300">Contacto</a></li>
+      <button matButton [matMenuTriggerFor]="menu" class="cursor-pointer">ES <span class="text-primary">▼</span></button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 11</button>
+        <button mat-menu-item>Item 22</button>
+      </mat-menu>
+      <!-- <li>
+        <button class="btn btn-primary" popovertarget="popover-1" style="anchor-name:--anchor-1">
+          ES <span class="text-neutral">▼</span>
+        </button>
+      </li>
+      <ul class="dropdown menu w-52 bg-neutral shadow-sm" popover id="popover-1"
+        style="position-anchor:--anchor-1">
+        <li><a>Item 1</a></li>
+        <li><a>Item 2</a></li>
+      </ul> -->
     </ul>
 
     <!-- Botón menú móvil (visible solo en móvil) -->
     <button class="md:hidden focus:outline-none">
       <!-- Icono hamburguesa simple -->
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" 
-           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-              d="M4 6h16M4 12h16M4 18h16"></path>
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
   </div>
 </nav>
+

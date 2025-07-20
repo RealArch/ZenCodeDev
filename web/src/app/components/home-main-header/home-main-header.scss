@@ -1,6 +1,8 @@
 .section-bg {
-  background-image: linear-gradient(to right, #ffffff, rgba(13, 27, 62, 0) 50%), url('/img/header.avif');
-    background-size: auto 120%;
-    background-position: right top;
-    background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9)40%, rgba(13, 27, 62, 0) 70%), url('/img/header.avif');
+  background-size: auto 120%;
+  background-position: right top;
+  background-repeat: no-repeat;
 }
+
+//background-image: linear-gradient(to right, #ffffff 30%, rgba(13, 27, 62, 0) 30%), url('/img/header.avif');
