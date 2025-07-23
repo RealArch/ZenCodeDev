@@ -1,0 +1,16 @@
+<nav class="navbar bg-neutral text-white">
+</nav>
+
+
+<div class="menu">
+    <div routerLink="" class="item button" matRipple (click)="toggle()" routerLinkActive="active" 
+    [routerLinkActiveOptions]="{ exact: true }">
+        Inicio
+    </div>
+    <div class="item button" matRipple (click)="toggle()" routerLinkActive="active">
+        Servicio
+    </div>
+    <div routerLink="contact" class="item button" matRipple (click)="toggle()" routerLinkActive="active">
+        Contacto
+    </div>
+</div>

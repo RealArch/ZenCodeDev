@@ -1,3 +1,12 @@
-<app-nav></app-nav>
-<router-outlet />
-<app-main-footer></app-main-footer>
+<mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="over">
+        <app-main-sidenav (toggleDrawer)="drawer.toggle()"></app-main-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-nav (toggleDrawer)="drawer.toggle()"></app-nav>
+        <router-outlet />
+        <app-main-footer></app-main-footer>
+    </mat-drawer-content>
+
+
+</mat-drawer-container>
