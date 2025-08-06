@@ -17,8 +17,11 @@ export const routes: Routes = [
                 path: 'contact',
                 loadComponent: () => import('./pages/public/contact/contact').then(m => m.Contact)
             },
-
         ]
+    },
+    {
+        path: ':code',
+        loadComponent: () => import('./pages/public/redirect/redirect').then(m => m.Redirect)
     },
 
 ];
