@@ -20,8 +20,11 @@ export const routes: Routes = [
         ]
     },
     {
-        path: ':code',
-        loadComponent: () => import('./pages/public/redirect/redirect').then(m => m.Redirect)
+        path: 'r/:code',
+        loadComponent: () => import('./pages/public/redirect/redirect').then(m => m.Redirect),
+        data: {
+            renderMode: 'disable' // <- esto evita el prerendering en esa ruta
+        }
     },
 
 ];

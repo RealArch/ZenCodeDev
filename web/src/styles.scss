@@ -17,7 +17,7 @@
 // }
 
 //https://tabler.io/icons para iconos icons
-
+//https://qrplanet.com/es para qr
 html {
   height: 100%;
   color-scheme: light dark;
@@ -127,12 +127,14 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.btn {
-  @apply shadow-lg hover:shadow-xl font-light;
-  border: none;
+// .btn {
+//   @apply shadow-lg hover:shadow-xl font-light;
+//   border-color: transparent;
 
-}
-
+// }
+// .btn-outline{
+//   border-color:  inherit;
+// }
 .dropdown {
   margin-top: 10px;
   border-radius: 10px;
