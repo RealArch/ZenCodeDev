@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { PageHeader } from '../../../components/page-header/page-header';
+import {MailerService} from '../../../services/mailer.service'
 @Component({
   selector: 'app-contact',
   imports: [ReactiveFormsModule, PageHeader],
@@ -25,7 +26,7 @@ export class Contact {
 
   // Inject services directly using inject() for Angular 16+
   private fb = inject(FormBuilder);
-  // private apiMailer = inject(MailerService);
+  private apiMailer = inject(MailerService);
   // private toastService = inject(ToastService); // Replaced MatSnackBar
   // private modalService = inject(ModalService); // Replaced PopupsService
 
@@ -45,20 +46,20 @@ export class Contact {
 
   sendMail(form: any): void {
     this.sending.set(true); // Update signal
-    // this.apiMailer.sendMail(form.name, form.lastname, form.email, form.phone, form.description)
-    //   .then(() => {
-    //     // Use custom modal service
-    //     this.modalService.openModal(
-    //       '¡Muy bien!',
-    //       'Mensaje enviado con éxito. Revisaremos tu solicitud y la responderemos lo más pronto posible.'
-    //     );
-    //     this.contactForm.reset();
-    //   }).catch(err => {
-    //     console.error(err);
-    //     // Use custom toast service
-    //     this.toastService.showToast('Ocurrió un problema al enviar el mensaje. Por favor intenta nuevamente.', 'error');
-    //   }).finally(() => {
-    //     this.sending.set(false); // Update signal
-    //   });
+    this.apiMailer.sendMail(form.name, form.lastname, form.email, form.phone, form.description)
+      .then(() => {
+        // Use custom modal service
+        // this.modalService.openModal(
+        //   '¡Muy bien!',
+        //   'Mensaje enviado con éxito. Revisaremos tu solicitud y la responderemos lo más pronto posible.'
+        // );
+        this.contactForm.reset();
+      }).catch(err => {
+        console.error(err);
+        // Use custom toast service
+        // this.toastService.showToast('Ocurrió un problema al enviar el mensaje. Por favor intenta nuevamente.', 'error');
+      }).finally(() => {
+        this.sending.set(false); // Update signal
+      });
   }
 }

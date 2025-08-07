@@ -3,6 +3,9 @@ import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAnalytics, provideAnalytics, ScreenTrackingService } from '@angular/fire/analytics';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -14,6 +17,18 @@ export const appConfig: ApplicationConfig = {
         anchorScrolling: 'enabled',           // Opcional: Para que funcione el scroll a fragmentos (#id)
       })
     ),
-    provideClientHydration(withEventReplay())
+    provideClientHydration(
+      withEventReplay()),
+    provideFirebaseApp(() => initializeApp({
+      projectId: "zencodedev",
+      appId: "1:207807197428:web:0d66c22d586e31aca9aea1",
+      storageBucket: "zencodedev.firebasestorage.app",
+      apiKey: "AIzaSyAqlG_yjmNl6rXgmgO40Vl1FXcFRL1rRWg",
+      authDomain: "zencodedev.firebaseapp.com", messagingSenderId:
+        "207807197428", measurementId: "G-JW7ZJNWBJC"
+    })),
+    provideAnalytics(() => getAnalytics()),
+    ScreenTrackingService,
+    provideFirestore(() => getFirestore())
   ]
 };

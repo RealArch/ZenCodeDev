@@ -1,5 +1,4 @@
 #header {
-    height: 450px;
     color: var(--ion-color-light);
     background-position: right;
     background-size: cover;
@@ -9,19 +8,8 @@
     text-transform: capitalize;
 }
 
-.breadcrumb {
-    li {
-        a {
-            text-decoration: none;
-            color: var(--ion-color-secondary);
-        }
-    }
-}
 
-.active {
-    pointer-events: none;
-    color: var(--ion-color-light)!important;
-}
+
 
 /* Extra pequeño (xs) */
 @media (max-width: 575.98px) {
