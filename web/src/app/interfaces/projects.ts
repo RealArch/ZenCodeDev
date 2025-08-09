@@ -3,4 +3,5 @@ export interface Projects {
     logo: string;
     name: string;
     bg_color:string;
+    link:string;
 }

@@ -35,7 +35,6 @@ export class Home {
         this.loading = false
         this.projects.set(data as Projects[])
 
-        console.log(this.projects)
       },
       error: (error) => {
         console.error('Error fetching projects:', error);
