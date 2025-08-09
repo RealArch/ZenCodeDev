@@ -1,0 +1,59 @@
+<!-- <div class="container">
+    <div class="swiper" #swiperRef>
+        <div class="swiper-wrapper">
+            @for(project of projects; track project) {
+            <div class="swiper-slide py-5">
+                <div class="" [ngStyle]="{'background-color':project.bg_color}">
+                    <img [src]="project.logo" [alt]="project.name" />
+                </div>
+
+            </div>
+            }
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+hola
+{{projects[1] | json}} -->
+<!-- <div class="container" >
+    @if(!yes){
+        <swiper-container #portfolioSwiper >
+            @for(project of slides; track project) {
+            <swiper-slide >
+                <div class="bg-[project.color]">
+                    hola1
+                </div>
+            </swiper-slide>
+        }
+        </swiper-container>
+        }
+</div> -->
+<div class="container py-16 sm:py-24">
+    <div class="text-center">
+        <p class="mt-2 text-3xl font-extrabold text-base-content sm:text-4xl lg:text-5xl tracking-tight">
+            Casos de exito
+        </p>
+    </div>
+
+    <div class="swiper h-50 mt-16" #swiperContainer>
+        <div class="swiper-wrapper">
+            @for(project of projects; track project.id){
+            <div class=" swiper-slide  ">
+                <div class="px-4 card item-portfolio h-[100%] flex items-center justify-center"
+                    [ngStyle]="{'background-color':project.bg_color}">
+                    <img class="max-w-[175px]" [src]="project.logo" alt="">
+                </div>
+            </div>
+
+            }
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>

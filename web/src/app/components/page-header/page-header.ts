@@ -8,7 +8,7 @@ interface BreadcrumbItem {
 }
 @Component({
   selector: 'app-page-header',
-  imports: [NgClass, NgStyle, RouterLink],
+  imports: [NgClass, RouterLink],
   templateUrl: './page-header.html',
   styleUrl: './page-header.scss'
 })

@@ -2,4 +2,13 @@
 <app-section-welcome></app-section-welcome>
 <app-section-general-solutions></app-section-general-solutions>
 <!-- <app-section-specialty></app-section-specialty> -->
- <app-section-features-1></app-section-features-1>
+<app-section-features-1></app-section-features-1>
+
+@defer (on viewport; prefetch on idle) {
+    @if(!loading){
+    <app-section-slider-projects [projects]="projects()"></app-section-slider-projects>
+    }
+} @placeholder{
+    <div>Loading projects</div>
+}
+
