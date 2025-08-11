@@ -1,7 +1,8 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { PageHeader } from '../../../components/page-header/page-header';
-import {MailerService} from '../../../services/mailer.service'
+import { MailerService } from '../../../services/mailer.service'
+import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-contact',
   imports: [ReactiveFormsModule, PageHeader],
@@ -9,7 +10,11 @@ import {MailerService} from '../../../services/mailer.service'
   styleUrl: './contact.scss'
 })
 export class Contact {
-// Using signals for reactive state, common in zoneless applications
+  //SEO Injects
+  meta = inject(Meta);
+  title = inject(Title)
+  //
+  // Using signals for reactive state, common in zoneless applications
   background = signal('img/contact_background_ra-code.webp');
   breadcrumb = signal([
     {
@@ -41,6 +46,8 @@ export class Contact {
   }
 
   ngOnInit(): void {
+    this.setSeoTags()
+
     // No specific initialization logic needed here for this component
   }
 
@@ -61,5 +68,19 @@ export class Contact {
       }).finally(() => {
         this.sending.set(false); // Update signal
       });
+  }
+
+  setSeoTags() {
+    this.title.setTitle('Contacto - Zencode | Desarrollo de Software en Orlando');
+    this.meta.addTags([
+      { name: 'description', content: 'Contáctanos para desarrollar tu aplicación móvil o software a medida en Orlando. Servicio en español e inglés. Respuesta rápida garantizada.' },
+      { name: 'keywords', content: 'contacto Zencode Developers, contratar programador Orlando, desarrolladores software Orlando, apps móviles Orlando' },
+      { name: 'robots', content: 'index, follow' },
+      { property: 'og:title', content: 'Contacto - Zencode Developers | Desarrollo de Software en Orlando' },
+      { property: 'og:description', content: 'Habla con nuestro equipo de desarrollo y lleva tu idea al siguiente nivel. Servicio en Orlando y alrededores.' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://zencodedev.com/contact' },
+      { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/zencodedev.firebasestorage.app/o/media%2Flogos%2Flogo-dark.svg?alt=media&token=783bf289-adb5-4a04-bbb1-94bcf7fcdffb' },
+    ]);
   }
 }

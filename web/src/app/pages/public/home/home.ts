@@ -9,6 +9,7 @@ import { SectionSliderProjects } from "../../../components/section-slider-projec
 import { ProjectsService } from '../../../services/projects.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Projects } from '../../../interfaces/projects';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,10 @@ import { Projects } from '../../../interfaces/projects';
   styleUrl: './home.scss'
 })
 export class Home {
+  //SEO Injects
+  meta = inject(Meta);
+  title = inject(Title)
+  //
   pojectsService = inject(ProjectsService)
   private destroyRef = inject(DestroyRef);
   projects = signal<Projects[]>([])
@@ -26,6 +31,7 @@ export class Home {
 
   }
   ngOnInit() {
+    this.setSeoTags()
     this.loading = true
 
     this.pojectsService.getAllProjetcs().pipe(
@@ -42,5 +48,19 @@ export class Home {
 
       }
     });
+  }
+  //SEO
+  setSeoTags() {
+    this.title.setTitle('Zencode Developers - Desarrollo de Software a Medida en Orlando');
+    this.meta.addTags([
+      { name: 'description', content: 'Desarrollo de aplicaciones móviles y de escritorio en Orlando. Software a medida para empresas hispanohablantes y soluciones tecnológicas adaptadas a tu negocio.' },
+      { name: 'keywords', content: 'desarrollo de software Orlando, apps móviles Orlando, software a medida, programadores Orlando, Zencode Developers' },
+      { name: 'robots', content: 'index, follow' },
+      { property: 'og:title', content: 'Zencode Developers - Desarrollo de Software a Medida en Orlando' },
+      { property: 'og:description', content: 'Creamos software personalizado, apps móviles y de escritorio para negocios en Orlando. Servicio en español e inglés.' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://zencodedev.com/' },
+      { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/zencodedev.firebasestorage.app/o/media%2Flogos%2Flogo-dark.svg?alt=media&token=783bf289-adb5-4a04-bbb1-94bcf7fcdffb' },
+    ]);
   }
 }
