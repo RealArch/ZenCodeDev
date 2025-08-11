@@ -80,7 +80,7 @@ export class Contact {
       { property: 'og:description', content: 'Habla con nuestro equipo de desarrollo y lleva tu idea al siguiente nivel. Servicio en Orlando y alrededores.' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://zencodedev.com/contact' },
-      { property: 'og:image', content: 'https://zencodedev.com/img/logos/logo-dark.svg' },
+      { property: 'og:image', content: 'https://zencodedev.com/img/logos/logo-dark.webp' },
     ]);
   }
 }
