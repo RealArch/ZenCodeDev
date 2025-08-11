@@ -60,7 +60,7 @@ export class Home {
       { property: 'og:description', content: 'Creamos software personalizado, apps móviles y de escritorio para negocios en Orlando. Servicio en español e inglés.' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://zencodedev.com/' },
-      { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/zencodedev.firebasestorage.app/o/media%2Flogos%2Flogo-dark.svg?alt=media&token=783bf289-adb5-4a04-bbb1-94bcf7fcdffb' },
+      { property: 'og:image', content: 'https://zencodedev.com/img/logos/logo-dark.svg' },
     ]);
   }
 }

@@ -26,7 +26,7 @@ export class Services {
       { property: 'og:description', content: 'Soluciones en apps móviles, software a medida y desarrollo empresarial en Orlando. Expertos en innovación y tecnología.' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://zencodedev.com/services' },
-      { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/zencodedev.firebasestorage.app/o/media%2Flogos%2Flogo-dark.svg?alt=media&token=783bf289-adb5-4a04-bbb1-94bcf7fcdffb' },
+      { property: 'og:image', content: 'https://zencodedev.com/img/logos/logo-dark.svg' },
     ]);
   }
 
