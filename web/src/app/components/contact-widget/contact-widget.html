@@ -1,0 +1,60 @@
+<div class="fixed bottom-5 right-5 z-50 md:mr-3">
+    <!-- Panel abierto -->
+    @if(isOpen) {
+
+    <div class="bg-neutral-800 shadow-xl rounded-full p-2 w-56 grid justify-items-center w-auto  ">
+        <div class="flex justify-between items-center mb-6">
+            <!-- <h3 class="font-bold text-lg">Contacto</h3> -->
+            <button (click)="toggleWidget()" class="btn btn-xs btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <!-- Botón WhatsApp -->
+            <!-- <a href="https://wa.me/14079060221" target="_blank" class="btn btn-success btn-circle shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
+            </a> -->
+            <!-- Botón SMS -->
+            <a href="sms:+14079060221" class="btn btn-primary btn-circle shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+                    <path d="M11 4h2" />
+                    <path d="M12 17v.01" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    }
+    <!-- Botón flotante cerrado -->
+    @if(!isOpen) {
+    <div>
+        <button (click)="toggleWidget()" class="btn btn-xl bg-primary btn-circle shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 9h8" />
+                <path d="M8 13h6" />
+                <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+            </svg>
+        </button>
+    </div>
+    }
+</div>

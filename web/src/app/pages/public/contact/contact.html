@@ -30,10 +30,10 @@
                         <div class="w-full lg:w-6/12 px-4 mb-4">
                             <div class="form-control w-full">
                                 <label class="label">
-                                    <span class="label-text">Nombre</span>
+                                    <span class="label-text">Nombre</span><span class="text-[red]">*</span>
                                 </label>
                                 <input type="text" maxlength="25" placeholder="Ej. Jhon"
-                                    class="input input-bordered w-full rounded-md" #name formControlName="name">
+                                    class="input w-full rounded-md" #name formControlName="name">
                                 <label class="label">
                                     <span class="label-text-alt text-right w-full">{{name.value.length || 0}}/25</span>
                                 </label>
@@ -42,7 +42,7 @@
                         <div class="w-full lg:w-6/12 px-4 mb-4">
                             <div class="form-control w-full">
                                 <label class="label">
-                                    <span class="label-text">Apellido</span>
+                                    <span class="label-text">Apellido</span><span class="text-[red]">*</span>
                                 </label>
                                 <input type="text" maxlength="25" placeholder="Ej. Smith"
                                     class="input input-bordered w-full rounded-md" #lastname formControlName="lastname">
@@ -55,7 +55,7 @@
                         <div class="w-full lg:w-6/12 px-4 mb-4">
                             <div class="form-control w-full">
                                 <label class="label">
-                                    <span class="label-text">Email</span>
+                                    <span class="label-text">Email</span><span class="text-[red]">*</span>
                                 </label>
                                 <input type="email" maxlength="100" placeholder="example@gmail.com"
                                     class="input input-bordered w-full rounded-md" #email formControlName="email">
@@ -68,7 +68,7 @@
                         <div class="w-full lg:w-6/12 px-4 mb-4">
                             <div class="form-control w-full">
                                 <label class="label">
-                                    <span class="label-text">Teléfono</span>
+                                    <span class="label-text">Teléfono</span><span class="text-[red]">*</span>
                                 </label>
                                 <input type="text" maxlength="20" placeholder="+1 407 702 3859"
                                     class="input input-bordered w-full rounded-md" #phone formControlName="phone">
@@ -81,7 +81,7 @@
                         <div class="w-full px-4 mb-4">
                             <div class="form-control w-full">
                                 <label class="label">
-                                    <span class="label-text">Descripción</span>
+                                    <span class="label-text">Descripción</span><span class="text-[red]">*</span>
                                 </label>
                                 <textarea rows="9" maxlength="1000" placeholder="Cuéntanos... ¿cómo te podemos ayudar?"
                                     class="textarea textarea-bordered h-32 w-full rounded-md" #description
@@ -92,7 +92,7 @@
                                 </label>
                             </div>
                         </div>
-                        @if (!contactForm.valid) {
+                        @if (!contactForm.valid && contactForm.touched) {
                         <div class="w-full text-right pt-2 px-4">
                             <span class="text-error text-sm">Completa todos los campos correctamente para desbloquear
                                 el botón de enviar.

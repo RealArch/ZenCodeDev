@@ -90,7 +90,7 @@ html {
   --color-secondary-content: oklch(97% 0.014 308.299);
   --color-accent: oklch(28% 0.109 3.907);
   --color-accent-content: oklch(98% 0.031 120.757);
-  --color-neutral: #40403f;
+  --color-neutral: #2d2d2d;
   --color-neutral-content: oklch(98% 0 0);
   --color-info: oklch(48% 0.243 264.376);
   --color-info-content: oklch(97% 0.014 254.604);
@@ -153,4 +153,8 @@ body {
 //COmponents 
 .card{
     border-radius: 15px;
+}
+
+.input::placeholder, .textarea::placeholder{
+    opacity: .5;
 }

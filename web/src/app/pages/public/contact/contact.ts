@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { PageHeader } from '../../../components/page-header/page-header';
 import { MailerService } from '../../../services/mailer.service'
 import { Meta, Title } from '@angular/platform-browser';
+import { AlertService } from '../../../services/popups/alert.service';
 @Component({
   selector: 'app-contact',
   imports: [ReactiveFormsModule, PageHeader],
@@ -29,11 +30,9 @@ export class Contact {
   sending = signal(false); // Using signal for sending state
   contactForm: FormGroup;
 
-  // Inject services directly using inject() for Angular 16+
   private fb = inject(FormBuilder);
   private apiMailer = inject(MailerService);
-  // private toastService = inject(ToastService); // Replaced MatSnackBar
-  // private modalService = inject(ModalService); // Replaced PopupsService
+  private alertService = inject(AlertService)
 
   constructor() {
     this.contactForm = this.fb.group({
@@ -60,9 +59,13 @@ export class Contact {
         //   '¡Muy bien!',
         //   'Mensaje enviado con éxito. Revisaremos tu solicitud y la responderemos lo más pronto posible.'
         // );
+        this.alertService.show('success', 'Mensaje enviado con exito. Gracias por contactarnos')
+
         this.contactForm.reset();
       }).catch(err => {
         console.error(err);
+        this.alertService.show('error', 'Ocurrio un problema al enviar el mensaje. Por favor intenta nuevamente.')
+
         // Use custom toast service
         // this.toastService.showToast('Ocurrió un problema al enviar el mensaje. Por favor intenta nuevamente.', 'error');
       }).finally(() => {

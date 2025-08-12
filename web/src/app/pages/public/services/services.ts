@@ -1,9 +1,11 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { PageHeader } from '../../../components/page-header/page-header';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-services',
-  imports: [],
+  imports: [PageHeader, RouterLink],
   templateUrl: './services.html',
   styleUrl: './services.scss'
 })
@@ -11,7 +13,20 @@ export class Services {
   //SEO Injects
   meta = inject(Meta);
   title = inject(Title)
-  //
+  
+  // Signals for header
+  background = signal('img/contact_background_ra-code.webp');
+  breadcrumb = signal([
+    {
+      name: 'Home',
+      link: '/'
+    },
+    {
+      name: 'Servicios',
+      link: '/services'
+    }
+  ]);
+
   ngOnInit() {
     this.setSeoTags()
   }
@@ -29,5 +44,4 @@ export class Services {
       { property: 'og:image', content: 'https://zencodedev.com/img/logos/logo-dark.png' },
     ]);
   }
-
 }

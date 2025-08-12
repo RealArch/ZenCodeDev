@@ -4,7 +4,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButton } from '@angular/material/button'
 @Component({
   selector: 'app-nav',
-  imports: [RouterLink, MatMenuModule, MatButton],
+  imports: [RouterLink, MatMenuModule],
   templateUrl: './nav.html',
   styleUrl: './nav.scss'
 })

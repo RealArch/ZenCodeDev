@@ -5,6 +5,18 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
-.item-portfolio{
+.item-portfolio {
     width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--color-primary);
+
+    top: 50%;
+    transform: translateY(-50%);
 }
