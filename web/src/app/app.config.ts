@@ -13,8 +13,8 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(routes,
       withInMemoryScrolling({
-        scrollPositionRestoration: 'disabled', // Para que vaya al top en nuevas páginas y restaure en el 'back'
-        // anchorScrolling: 'enabled',           // Opcional: Para que funcione el scroll a fragmentos (#id)
+        scrollPositionRestoration: 'enabled', // Para que vaya al top en nuevas páginas y restaure en el 'back'
+        anchorScrolling: 'enabled',           // Opcional: Para que funcione el scroll a fragmentos (#id)
       })
     ),
     provideClientHydration(

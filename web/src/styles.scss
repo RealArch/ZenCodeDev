@@ -158,3 +158,6 @@ body {
 .input::placeholder, .textarea::placeholder{
     opacity: .5;
 }
+body.no-scroll {
+  overflow: hidden;
+}

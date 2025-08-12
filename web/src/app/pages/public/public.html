@@ -1,5 +1,6 @@
 <mat-drawer-container class="drawer-container" autosize>
-    <mat-drawer #drawer class="sidenav" mode="over" style="max-width: 300px;">
+    <mat-drawer #drawer class="sidenav" mode="over" style="max-width: 300px;"
+    (openedChange)="toggleBodyScroll($event)">
         <app-main-sidenav (toggleDrawer)="drawer.toggle()"></app-main-sidenav>
     </mat-drawer>
     <mat-drawer-content>
