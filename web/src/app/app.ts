@@ -1,4 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, Inject, PLATFORM_ID, signal } from '@angular/core';
+import { getAnalytics, logEvent } from '@angular/fire/analytics';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -9,4 +11,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('web');
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    if (isPlatformBrowser(this.platformId)) {
+      const analytics = getAnalytics();
+      logEvent(analytics, 'app_start'); // Ejemplo de evento
+    }
+
+  }
 }
