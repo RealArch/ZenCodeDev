@@ -1,4 +1,5 @@
 export const environment = {
+    env: 'development',
     sendTo: 'info@zencodedev.com',
     firebaseConfig: {
         projectId: "zencodedev",
