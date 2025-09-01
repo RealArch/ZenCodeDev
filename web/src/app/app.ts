@@ -12,11 +12,11 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('web');
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-    if (isPlatformBrowser(this.platformId)) {
-      const analytics = getAnalytics();
-      logEvent(analytics, 'app_start'); // Ejemplo de evento
-    }
+  // constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+  //   if (isPlatformBrowser(this.platformId)) {
+  //     const analytics = getAnalytics();
+  //     logEvent(analytics, 'app_start'); // Ejemplo de evento
+  //   }
 
-  }
+  // }
 }
