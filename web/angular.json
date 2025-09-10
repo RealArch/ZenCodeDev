@@ -13,6 +13,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "es",
+        "locales": {
+          "en": "src/locale/messages.en.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -20,6 +26,9 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "polyfills": [
+              "@angular/localize/init"
+            ],
             "assets": [
               {
                 "glob": "**/*",
@@ -49,7 +58,8 @@
                   "maximumError": "20kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize": ["es", "en"]
             },
             "development": {
               "optimization": false,
@@ -61,7 +71,9 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
-            }
+            },
+            "es": { "localize": ["es"] },
+            "en": { "localize": ["en"] }
           },
           "defaultConfiguration": "production"
         },
@@ -73,7 +85,9 @@
             },
             "development": {
               "buildTarget": "web:build:development"
-            }
+            },
+            "es": { "buildTarget": "web:build:es" },
+            "en": { "buildTarget": "web:build:en" }
           },
           "defaultConfiguration": "development"
         },
@@ -85,6 +99,9 @@
           "options": {
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
+            "polyfills": [
+              "@angular/localize/init"
+            ],
             "assets": [
               {
                 "glob": "**/*",

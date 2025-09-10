@@ -5,11 +5,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    
-    "source": ".", 
+    "source": ".",
     "frameworksBackend": {
-      "region": "us-central1" 
-                              
-    }
+      "region": "us-central1"
+    },
+    "rewrites": [
+      { "source": "/es/**", "function": "ssr" },
+      { "source": "/en/**", "function": "ssr" },
+      { "source": "/", "destination": "/es/index.html" },
+      { "source": "**", "function": "ssr" }
+    ]
   }
 }
