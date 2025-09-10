@@ -10,10 +10,33 @@
       "region": "us-central1"
     },
     "rewrites": [
-      { "source": "/es/**", "function": "ssr" },
-      { "source": "/en/**", "function": "ssr" },
-      { "source": "/", "destination": "/es/index.html" },
-      { "source": "**", "function": "ssr" }
+      {
+        "source": "/es/**",
+        "function": "ssr"
+      },
+      {
+        "source": "/en/**",
+        "function": "ssr"
+      },
+      {
+        "source": "/",
+        "destination": "/es/index.html"
+      },
+      {
+        "source": "**",
+        "function": "ssr"
+      }
     ]
+  },
+  "emulators": {
+    "apphosting": {
+      "port": 5002,
+      "rootDirectory": "./",
+      "startCommand": "npm run dev"
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
   }
 }

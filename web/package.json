@@ -7,7 +7,7 @@
   "serve:es": "ng serve --configuration es",
   "serve:en": "ng serve --configuration en",
     "build": "ng build",
-  "build:all": "ng build --localize",
+  "build:all": "ng build --configuration=production",
   "build:es": "ng build --configuration es",
   "build:en": "ng build --configuration en",
     "watch": "ng build --watch --configuration development",

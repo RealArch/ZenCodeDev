@@ -17,8 +17,7 @@
         "sourceLocale": "es",
         "locales": {
           "en": {
-            "translation": "src/locale/messages.en.xlf",
-            "subPath": ""
+            "translation": "src/locale/messages.en.xlf"
           }
         }
       },
@@ -62,7 +61,11 @@
                   "maximumError": "20kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize": [
+                "es",
+                "en"
+              ]
             },
             "development": {
               "optimization": false,
@@ -73,6 +76,10 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.development.ts"
                 }
+              ],
+              "localize": [
+                "es",
+                "en"
               ]
             },
             "es": {
