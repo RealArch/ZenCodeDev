@@ -1,0 +1,14 @@
+<mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="over" style="max-width: 300px;"
+    (openedChange)="toggleBodyScroll($event)">
+        <app-main-sidenav (toggleDrawer)="drawer.toggle()"></app-main-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-nav (toggleDrawer)="drawer.toggle()"></app-nav>
+        <router-outlet />
+        <app-main-footer></app-main-footer>
+        <app-contact-widget></app-contact-widget>
+    </mat-drawer-content>
+
+    
+</mat-drawer-container>

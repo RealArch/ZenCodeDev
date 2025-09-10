@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="homeHeaderTitle" datatype="html">
+        <source> Su empresa es <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong
+                        class=&quot;text-white&quot;&gt;"/>única.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Su <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong
+                        class=&quot;text-white&quot;&gt;"/>software<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> también debería serlo. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home-main-header/home-main-header.html</context>
+          <context context-type="linenumber">9,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeHeaderDescription" datatype="html">
+        <source> Diseñamos experiencias únicas y funcionales, pensadas para <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;font-semibold&quot;&gt;"/>convertir<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> visitantes <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;font-semibold&quot;&gt;"/>en clientes<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> y hacer crecer tu tienda online desde el primer clic. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home-main-header/home-main-header.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeHeaderButton" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-base-300 font-normal&quot;&gt;"/>Construyamos su Solución<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home-main-header/home-main-header.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeHeaderImageAlt" datatype="html">
+        <source>Desarrollo de aplicaciones móviles a medida en Orlando - Zencode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home-main-header/home-main-header.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcomeTitle" datatype="html">
+        <source> Bienvenido a Zencode. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcomeDescription" datatype="html">
+        <source> Somos una agencia de desarrollo de software enfocada en crear aplicaciones móviles y tiendas en línea de alto impacto. Con una filosofía de diseño minimalista, construimos plataformas potentes, intuitivas y atractivas que mejoran la experiencia de tus usuarios y hacen crecer tu negocio. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcomeButton1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-medium&quot;&gt;"/>Nuestras Soluciones<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcomeButton2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-medium text-primary&quot;&gt;"/>Contáctanos<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcomeImageAlt" datatype="html">
+        <source>Empresa de desarrollo de software especializada.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

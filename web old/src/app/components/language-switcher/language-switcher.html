@@ -1,0 +1,14 @@
+<div class="flex space-x-2">
+  <button 
+    (click)="switchLanguage('en')" 
+    class="btn btn-sm"
+    [class.active]="getCurrentLanguage() === 'en'">
+    EN
+  </button>
+  <button 
+    (click)="switchLanguage('es')" 
+    class="btn btn-sm"
+    [class.active]="getCurrentLanguage() === 'es'">
+    ES
+  </button>
+</div>

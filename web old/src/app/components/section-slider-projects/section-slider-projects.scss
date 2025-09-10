@@ -1,0 +1,22 @@
+/* Importa los estilos base de Swiper */
+@import 'swiper/css';
+
+/* Importa los estilos de los módulos que estás usando (opcional) */
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+.item-portfolio {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--color-primary);
+
+    top: 50%;
+    transform: translateY(-50%);
+}

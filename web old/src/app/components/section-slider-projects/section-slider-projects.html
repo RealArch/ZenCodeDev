@@ -1,0 +1,23 @@
+<div class="container py-16 sm:py-24">
+    <div class="text-center">
+        <p class="mt-2 text-3xl font-extrabold text-base-content sm:text-4xl lg:text-5xl tracking-tight">
+            Casos de exito
+        </p>
+    </div>
+    <div class="swiper h-50 mt-16 rounded-[15px]" #swiperContainer>
+        <div class="swiper-wrapper">
+            @for(project of projects; track project.id){
+            <a class=" swiper-slide" href="{{project.link}}" target="_blank">
+                <div class="px-4 card item-portfolio h-[100%] flex items-center justify-center"
+                    [ngStyle]="{'background-color':project.bg_color}">
+                    <img class="max-w-[175px]" [src]="project.logo" alt="">
+                </div>
+            </a>
+            }
+        </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+    </div>
+</div>

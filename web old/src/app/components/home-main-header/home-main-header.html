@@ -1,0 +1,29 @@
+<section class="relative overflow-hidden min-h-screen flex items-center bg-section">
+    <div class="container mx-auto ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+
+            <!-- Columna de Texto (Izquierda) -->
+            <div class="z-10 p-4 md:p-0 md:mt-20">
+
+                <h1 class="text-5xl md:text-6xl font-bold text-neutral leading-tight">
+                    {{ translation.translate('homeHeaderTitle') }}
+                </h1>
+                <p class="mt-6 text-neutral max-w-lg text-lg">
+                    {{ translation.translate('homeHeaderDescription') }}
+                </p>
+                <button class="btn bg-neutral btn-lg mt-8 px-8 border-none" routerLink="contact">
+                    <span class="text-base-300 font-normal">{{ translation.translate('homeHeaderButton') }}</span>
+                </button>
+
+            </div>
+            <div class="flex justify-center hidden lg:block lg:justify-end" >
+                <div
+                    class="w-full max-w-lg h-auto transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <img src="img/phone-1.svg"
+                        alt="{{ translation.translate('homeHeaderImageAlt') }}">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
