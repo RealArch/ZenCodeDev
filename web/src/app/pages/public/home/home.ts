@@ -56,11 +56,24 @@ export class Home {
       { name: 'description', content: 'Desarrollo de aplicaciones móviles y de escritorio en Orlando. Software a medida para empresas hispanohablantes y soluciones tecnológicas adaptadas a tu negocio.' },
       { name: 'keywords', content: 'desarrollo de software Orlando, apps móviles Orlando, software a medida, programadores Orlando, Zencode Developers' },
       { name: 'robots', content: 'index, follow' },
+      
+      // Open Graph tags mejoradas
       { property: 'og:title', content: 'Zencode Developers - Desarrollo de Software a Medida en Orlando' },
       { property: 'og:description', content: 'Creamos software personalizado, apps móviles y de escritorio para negocios en Orlando. Servicio en español e inglés.' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://zencodedev.com/' },
-      { property: 'og:image', content: 'https://zencodedev.com/img/logos/logo-dark.png' },
+      { property: 'og:image', content: 'https://zencodedev.com/img/og-image.png' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { property: 'og:image:alt', content: 'Zencode Developers - Desarrollo de Software' },
+      { property: 'og:site_name', content: 'Zencode Developers' },
+      { property: 'og:locale', content: 'es_ES' },
+      
+      // Twitter Cards
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Zencode Developers - Desarrollo de Software a Medida en Orlando' },
+      { name: 'twitter:description', content: 'Creamos software personalizado, apps móviles y de escritorio para negocios en Orlando. Servicio en español e inglés.' },
+      { name: 'twitter:image', content: 'https://zencodedev.com/img/og-image.png' },
     ]);
   }
 }
