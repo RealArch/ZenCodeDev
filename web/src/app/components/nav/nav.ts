@@ -16,12 +16,20 @@ export class Nav {
   } 
 
   getCurrentLang(): string {
-      // SSR-safe: Only use window if available
-      if (typeof window !== 'undefined') {
-        const match = window.location.pathname.match(/^\/(es|en)(\/|$)/);
-        return match ? match[1] : 'es';
-      }
-      return 'es';
+    // SSR-safe: Only use window if available
+    if (typeof window !== 'undefined') {
+      const match = window.location.pathname.match(/^\/(es|en)(\/|$)/);
+  if (match) return match[1];
+
+  // Detect language by browser settings
+  const navLang = window.navigator.language || window.navigator.languages?.[0] || '';
+  // Use country code if available (e.g. es-ES, en-US)
+  if (navLang.startsWith('es')) return 'es';
+  if (navLang.startsWith('en')) return 'en';
+  // You can add more country/language mappings here
+  return 'en'; // Default fallback is now English
+    }
+    return 'es';
   }
 
   switchLang(event: Event) {
