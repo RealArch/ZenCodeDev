@@ -15,36 +15,27 @@
       <li><a routerLink="contact" class="hover:text-gray-300" routerLinkActive="active"
           i18n="nav contact@@nav-contact">Contacto</a></li>
       <li>
-  <select class="select select-sm w-28 bg-neutral-700 text-white" [value]="getCurrentLang()" style="outline:none; box-shadow:none; border:none;" 
+        <select class="select select-sm w-28 bg-neutral-700 text-white no-border-select" [value]="getCurrentLang()"
           (change)="switchLang($event)">
           <option value="es">Español</option>
           <option value="en">English</option>
         </select>
       </li>
-      <!-- <button matButton [matMenuTriggerFor]="menu" class="cursor-pointer">ES <span class="text-primary">▼</span></button>
-
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 11</button>
-        <button mat-menu-item>Item 22</button>
-      </mat-menu> -->
-      <!-- <li>
-        <button class="btn btn-primary" popovertarget="popover-1" style="anchor-name:--anchor-1">
-          ES <span class="text-neutral">▼</span>
-        </button>
-      </li>
-      <ul class="dropdown menu w-52 bg-neutral shadow-sm" popover id="popover-1"
-        style="position-anchor:--anchor-1">
-        <li><a>Item 1</a></li>
-        <li><a>Item 2</a></li>
-      </ul> -->
     </ul>
 
-    <!-- Botón menú móvil (visible solo en móvil) -->
-    <button class="md:hidden focus:outline-none" (click)="toggle()">
-      <!-- Icono hamburguesa simple -->
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
+    <!-- Mobile: menú y selector de idioma juntos -->
+    <div class="flex md:hidden items-center space-x-2">
+      <select class="select select-sm w-24 bg-neutral-700 text-white no-border-select" [value]="getCurrentLang()"
+        (change)="switchLang($event)">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+      <button class="focus:outline-none" (click)="toggle()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+    </div>
   </div>
 </nav>
