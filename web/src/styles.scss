@@ -1,3 +1,5 @@
+
+
 // Include theming for Angular Material with `mat.theme()`.
 // This Sass mixin will define CSS variables that are used for styling Angular Material
 // components according to the Material 3 design spec.
@@ -102,7 +104,7 @@ html {
   --color-error-content: oklch(97% 0.014 343.198);
   --radius-selector: 1rem;
   --radius-field: 2rem;
-  --radius-box: 2rem;
+  --radius-box: 0.8rem;
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
   --border: 2px;
@@ -160,4 +162,19 @@ body {
 }
 body.no-scroll {
   overflow: hidden;
+}
+
+
+/* Clase reutilizable para selects sin borde ni outline y fondo oscuro */
+.no-border-select,
+.no-border-select:focus,
+.no-border-select:active,
+.no-border-select option,
+.no-border-select optgroup {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #232323 !important;
+  color: #fff !important;
+  cursor: pointer;
 }
