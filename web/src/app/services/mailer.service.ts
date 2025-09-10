@@ -17,7 +17,7 @@ export class MailerService {
         subject: 'Formulario Ra-code',
         html: `
         <strong>Nombre:</strong> ${name} <br>
-        <strong>Nombre:</strong> ${lastname} <br>
+        <strong>Apellido:</strong> ${lastname} <br>
         <strong>Email:</strong> ${email} <br>
         <strong>Phone:</strong> ${phone}<br><br>
         <strong>Mensaje:</strong> "${message}"

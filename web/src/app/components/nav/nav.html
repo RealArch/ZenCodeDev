@@ -9,9 +9,15 @@
 
     <!-- Menú -->
     <ul class="hidden md:flex space-x-6 text-lg items-center">
-      <li><a routerLink="/" class="hover:text-gray-300">Inicio</a></li>
-      <li><a routerLink="/services" class="hover:text-gray-300">Servicios</a></li>
-      <li><a routerLink="/contact" class="hover:text-gray-300">Contacto</a></li>
+      <li><a routerLink="." class="hover:text-gray-300" i18n="nav home@@nav-home">Inicio</a></li>
+      <li><a routerLink="services" class="hover:text-gray-300" routerLinkActive="active" i18n="nav services@@nav-services">Servicios</a></li>
+      <li><a routerLink="contact" class="hover:text-gray-300" routerLinkActive="active" i18n="nav contact@@nav-contact">Contacto</a></li>
+      <li>
+  <select class="select select-bordered select-sm w-28 bg-neutral text-white" [value]="getCurrentLang()" (change)="switchLang($event)">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </li>
       <!-- <button matButton [matMenuTriggerFor]="menu" class="cursor-pointer">ES <span class="text-primary">▼</span></button>
 
       <mat-menu #menu="matMenu">

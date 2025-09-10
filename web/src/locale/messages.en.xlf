@@ -3,15 +3,679 @@
   <file source-language="es" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="home-main-header-title" datatype="html">
-        <source> Su empresa es <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong
-                        class=&quot;text-white&quot;&gt;"/>única.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Su <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong
-                        class=&quot;text-white&quot;&gt;"/>software<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> también debería serlo. </source>
-        <target>Your company is <x id="START_TAG_STRONG"/>unique.<x id="CLOSE_TAG_STRONG"/> Your <x id="START_TAG_STRONG"/>software<x id="CLOSE_TAG_STRONG"/> should be too.</target>
+  <source> Su empresa es <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong
+      class=&quot;text-white&quot;&gt;"/>única.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Su <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong
+      class=&quot;text-white&quot;&gt;"/>software<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> también debería serlo. </source>
+  <target>Your company is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;text-white&quot;&gt;"/>unique.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Your <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;text-white&quot;&gt;"/>software<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> should be too. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/home-main-header/home-main-header.html</context>
-          <context context-type="linenumber">9,12</context>
+          <context context-type="linenumber">9,11</context>
         </context-group>
+        <note priority="1" from="description">home header title</note>
+      </trans-unit>
+      <trans-unit id="home-main-header-description" datatype="html">
+  <source> Diseñamos experiencias únicas y funcionales, pensadas para <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;font-semibold&quot;&gt;"/>convertir<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> visitantes <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;font-semibold&quot;&gt;"/>en clientes<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> y hacer crecer tu tienda online desde el primer clic. </source>
+  <target>We design unique and functional experiences, aimed at <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;font-semibold&quot;&gt;"/>turning<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> visitors <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;font-semibold&quot;&gt;"/>into customers<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and growing your online store from the very first click. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home-main-header/home-main-header.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+        <note priority="1" from="description">home header description</note>
+      </trans-unit>
+      <trans-unit id="home-main-header-cta" datatype="html">
+  <source>Construyamos su Solución</source>
+  <target>Let's build your solution</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home-main-header/home-main-header.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+        <note priority="1" from="description">home header cta</note>
+      </trans-unit>
+      <trans-unit id="home-main-header-image-alt" datatype="html">
+  <source>Desarrollo de aplicaciones móviles a medida en Orlando - Zencode</source>
+  <target>Custom mobile app development in Orlando - Zencode</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home-main-header/home-main-header.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">home header image alt</note>
+      </trans-unit>
+      <trans-unit id="footer-description" datatype="html">
+  <source> Fusionando la disciplina del código para crear soluciones de software que se sienten simples y funcionan a la perfección. </source>
+  <target>Blending code discipline to create software solutions that feel simple and work perfectly.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-footer/main-footer.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+        <note priority="1" from="description">footer description</note>
+      </trans-unit>
+      <trans-unit id="footer-navigation-title" datatype="html">
+  <source>Navegación</source>
+  <target>Navigation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-footer/main-footer.html</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+        <note priority="1" from="description">footer navigation title</note>
+      </trans-unit>
+      <trans-unit id="footer-nav-home" datatype="html">
+  <source>Inicio</source>
+  <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-footer/main-footer.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <note priority="1" from="description">footer nav home</note>
+      </trans-unit>
+      <trans-unit id="footer-nav-services" datatype="html">
+  <source>Servicios</source>
+  <target>Services</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-footer/main-footer.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <note priority="1" from="description">footer nav services</note>
+      </trans-unit>
+      <trans-unit id="footer-nav-contact" datatype="html">
+  <source>Contacto</source>
+  <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-footer/main-footer.html</context>
+          <context context-type="linenumber">22,25</context>
+        </context-group>
+        <note priority="1" from="description">footer nav contact</note>
+      </trans-unit>
+      <trans-unit id="footer-social-title" datatype="html">
+  <source>Síguenos</source>
+  <target>Follow us</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-footer/main-footer.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <note priority="1" from="description">footer social title</note>
+      </trans-unit>
+      <trans-unit id="footer-copyright" datatype="html">
+  <source>© 2025 Zencode. Todos los derechos reservados.</source>
+  <target>© 2025 Zencode. All rights reserved.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-footer/main-footer.html</context>
+          <context context-type="linenumber">51,54</context>
+        </context-group>
+        <note priority="1" from="description">footer copyright</note>
+      </trans-unit>
+      <trans-unit id="sidenav-home" datatype="html">
+  <source> Inicio </source>
+  <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-sidenav/main-sidenav.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+        <note priority="1" from="description">sidenav home</note>
+      </trans-unit>
+      <trans-unit id="sidenav-services" datatype="html">
+  <source> Servicio </source>
+  <target>Services</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-sidenav/main-sidenav.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+        <note priority="1" from="description">sidenav services</note>
+      </trans-unit>
+      <trans-unit id="sidenav-contact" datatype="html">
+  <source> Contacto </source>
+  <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-sidenav/main-sidenav.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+        <note priority="1" from="description">sidenav contact</note>
+      </trans-unit>
+      <trans-unit id="nav-home" datatype="html">
+  <source>Inicio</source>
+  <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav/nav.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <note priority="1" from="description">nav home</note>
+      </trans-unit>
+      <trans-unit id="nav-services" datatype="html">
+  <source>Servicios</source>
+  <target>Services</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav/nav.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <note priority="1" from="description">nav services</note>
+      </trans-unit>
+      <trans-unit id="nav-contact" datatype="html">
+  <source>Contacto</source>
+  <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav/nav.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <note priority="1" from="description">nav contact</note>
+      </trans-unit>
+      <trans-unit id="features-title" datatype="html">
+  <source> Principales características que te harán elegirnos </source>
+  <target>Main features that will make you choose us</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+        <note priority="1" from="description">features title</note>
+      </trans-unit>
+      <trans-unit id="feature-design-title" datatype="html">
+  <source> Diseño personalizado </source>
+  <target>Custom design</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <note priority="1" from="description">feature design title</note>
+      </trans-unit>
+      <trans-unit id="feature-design-description" datatype="html">
+  <source> Creamos sitios web que se adaptan a las necesidades específicas de su negocio y reflejan la identidad de su marca. </source>
+  <target>We create websites tailored to your business needs and reflecting your brand identity.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+        <note priority="1" from="description">feature design description</note>
+      </trans-unit>
+      <trans-unit id="feature-speed-title" datatype="html">
+  <source> Velocidad de carga rápida </source>
+  <target>Fast loading speed</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <note priority="1" from="description">feature speed title</note>
+      </trans-unit>
+      <trans-unit id="feature-speed-description" datatype="html">
+  <source> Optimizamos el rendimiento de su sitio web para garantizar que se cargue rápidamente, mejorando la experiencia del usuario y el SEO. </source>
+  <target>We optimize your website's performance to ensure it loads quickly, improving user experience and SEO.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+        <note priority="1" from="description">feature speed description</note>
+      </trans-unit>
+      <trans-unit id="feature-elegant-title" datatype="html">
+  <source> Diseño sencillo y elegante </source>
+  <target>Simple and elegant design</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <note priority="1" from="description">feature elegant title</note>
+      </trans-unit>
+      <trans-unit id="feature-elegant-description" datatype="html">
+  <source> Creamos diseños minimalistas y elegantes para hacer que su sitio web sea fácil de navegar y atractivo para sus visitantes. </source>
+  <target>We create minimalist and elegant designs to make your website easy to navigate and attractive to visitors.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+        <note priority="1" from="description">feature elegant description</note>
+      </trans-unit>
+      <trans-unit id="feature-service-title" datatype="html">
+  <source> Servicio al cliente excepcional </source>
+  <target>Exceptional customer service</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+        <note priority="1" from="description">feature service title</note>
+      </trans-unit>
+      <trans-unit id="feature-service-description" datatype="html">
+  <source> Estamos disponibles para responder preguntas y proporcionar soporte antes, durante y después del proceso de desarrollo. </source>
+  <target>We are available to answer questions and provide support before, during, and after the development process.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-features-1/section-features-1.html</context>
+          <context context-type="linenumber">88,90</context>
+        </context-group>
+        <note priority="1" from="description">feature service description</note>
+      </trans-unit>
+      <trans-unit id="solutions-title" datatype="html">
+  <source> Soluciones Digitales para Impulsar tu Negocio </source>
+  <target>Digital solutions to boost your business</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-general-solutions/section-general-solutions.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+        <note priority="1" from="description">solutions title</note>
+      </trans-unit>
+      <trans-unit id="web-dev-title" datatype="html">
+  <source>Desarrollo Web Full-Stack</source>
+  <target>Full-Stack Web Development</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-general-solutions/section-general-solutions.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <note priority="1" from="description">web dev title</note>
+      </trans-unit>
+      <trans-unit id="web-dev-description" datatype="html">
+  <source>Creamos sitios y plataformas web robustas, escalables y optimizadas. Desde un back-end potente hasta un front-end que enamora a tus usuarios.</source>
+  <target>We build robust, scalable, and optimized websites and platforms. From a powerful backend to a frontend that delights your users.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-general-solutions/section-general-solutions.html</context>
+          <context context-type="linenumber">32,35</context>
+        </context-group>
+        <note priority="1" from="description">web dev description</note>
+      </trans-unit>
+      <trans-unit id="mobile-dev-title" datatype="html">
+  <source>Aplicaciones Móviles</source>
+  <target>Mobile Applications</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-general-solutions/section-general-solutions.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <note priority="1" from="description">mobile dev title</note>
+      </trans-unit>
+      <trans-unit id="mobile-dev-description" datatype="html">
+  <source>Diseñamos y desarrollamos apps nativas e híbridas para iOS y Android que conectan con tu audiencia y ofrecen valor real en la palma de su mano.</source>
+  <target>We design and develop native and hybrid apps for iOS and Android that connect with your audience and deliver real value in the palm of their hand.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-general-solutions/section-general-solutions.html</context>
+          <context context-type="linenumber">51,54</context>
+        </context-group>
+        <note priority="1" from="description">mobile dev description</note>
+      </trans-unit>
+      <trans-unit id="custom-software-title" datatype="html">
+  <source>Software a Medida</source>
+  <target>Custom Software</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-general-solutions/section-general-solutions.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <note priority="1" from="description">custom software title</note>
+      </trans-unit>
+      <trans-unit id="custom-software-description" datatype="html">
+  <source>Analizamos tus procesos y construimos soluciones de software personalizadas que optimizan tu flujo de trabajo y aumentan la eficiencia.</source>
+  <target>We analyze your processes and build custom software solutions that optimize your workflow and increase efficiency.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-general-solutions/section-general-solutions.html</context>
+          <context context-type="linenumber">70,73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">39,43</context>
+        </context-group>
+        <note priority="1" from="description">custom software description</note>
+      </trans-unit>
+      <trans-unit id="solutions-cta" datatype="html">
+  <source> Conoce todos nuestros servicios → </source>
+  <target>See all our services →</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-general-solutions/section-general-solutions.html</context>
+          <context context-type="linenumber">79,81</context>
+        </context-group>
+        <note priority="1" from="description">solutions cta</note>
+      </trans-unit>
+      <trans-unit id="projects-title" datatype="html">
+  <source> Casos de exito </source>
+  <target>Success stories</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-slider-projects/section-slider-projects.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+        <note priority="1" from="description">projects title</note>
+      </trans-unit>
+      <trans-unit id="welcome-title" datatype="html">
+  <source>Bienvenido a Zencode</source>
+  <target>Welcome to Zencode</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+        <note priority="1" from="description">welcome title</note>
+      </trans-unit>
+      <trans-unit id="welcome-description" datatype="html">
+  <source>Somos una agencia de desarrollo de software enfocada en crear aplicaciones móviles y tiendas en línea de alto impacto. Con una filosofía de diseño minimalista, construimos plataformas potentes, intuitivas y atractivas que mejoran la experiencia de tus usuarios y hacen crecer tu negocio.</source>
+  <target>We are a software development agency focused on creating high-impact mobile applications and online stores. With a minimalist design philosophy, we build powerful, intuitive, and attractive platforms that improve your users' experience and grow your business.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+        <note priority="1" from="description">welcome description</note>
+      </trans-unit>
+      <trans-unit id="welcome-cta" datatype="html">
+  <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-medium text-primary&quot;&gt;"/>Contáctanos<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+  <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-medium text-primary&quot;&gt;"/>Contact us<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <note priority="1" from="description">welcome cta</note>
+      </trans-unit>
+      <trans-unit id="contact-page-header-title" datatype="html">
+  <source>Contacto</source>
+  <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">contact page header title</note>
+      </trans-unit>
+      <trans-unit id="contact-page-title" datatype="html">
+  <source> Contacta con nosotros </source>
+  <target>Contact us</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+        <note priority="1" from="description">contact page title</note>
+      </trans-unit>
+      <trans-unit id="contact-page-description" datatype="html">
+  <source> Estamos disponibles las 24 horas del día, los 7 días de la semana por correo electrónico y teléfono. También puedes hacer una pregunta sobre nuestros servicios a través de nuestro formulario de contacto. </source>
+  <target>We are available 24/7 by email and phone. You can also ask a question about our services through our contact form.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+        <note priority="1" from="description">contact page description</note>
+      </trans-unit>
+      <trans-unit id="name-label" datatype="html">
+  <source>Nombre</source>
+  <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">name label</note>
+      </trans-unit>
+      <trans-unit id="name-placeholder" datatype="html">
+  <source>Ej. Jhon</source>
+  <target>e.g. John</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">name placeholder</note>
+      </trans-unit>
+      <trans-unit id="lastname-label" datatype="html">
+  <source>Apellido</source>
+  <target>Last name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <note priority="1" from="description">lastname label</note>
+      </trans-unit>
+      <trans-unit id="lastname-placeholder" datatype="html">
+  <source>Ej. Smith</source>
+  <target>e.g. Smith</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <note priority="1" from="description">lastname placeholder</note>
+      </trans-unit>
+      <trans-unit id="email-label" datatype="html">
+  <source>Email</source>
+  <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">email label</note>
+      </trans-unit>
+      <trans-unit id="phone-label" datatype="html">
+  <source>Teléfono</source>
+  <target>Phone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note priority="1" from="description">phone label</note>
+      </trans-unit>
+      <trans-unit id="description-label" datatype="html">
+  <source>Descripción</source>
+  <target>Description</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+        <note priority="1" from="description">description label</note>
+      </trans-unit>
+      <trans-unit id="description-placeholder" datatype="html">
+  <source>Cuéntanos... ¿cómo te podemos ayudar?</source>
+  <target>Tell us... how can we help you?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="description">description placeholder</note>
+      </trans-unit>
+      <trans-unit id="form-validation-error" datatype="html">
+  <source>Completa todos los campos correctamente para desbloquear el botón de enviar. </source>
+  <target>Fill in all fields correctly to unlock the send button.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+        <note priority="1" from="description">form validation error</note>
+      </trans-unit>
+      <trans-unit id="send-button" datatype="html">
+  <source>Enviar</source>
+  <target>Send</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/contact/contact.html</context>
+          <context context-type="linenumber">108,110</context>
+        </context-group>
+        <note priority="1" from="description">send button</note>
+      </trans-unit>
+      <trans-unit id="loading-projects" datatype="html">
+  <source>Loading projects</source>
+  <target>Loading projects</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/home/home.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+        <note priority="1" from="description">loading projects placeholder</note>
+      </trans-unit>
+      <trans-unit id="services-page-header-title" datatype="html">
+  <source>Nuestros Servicios</source>
+  <target>Our Services</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">services page header title</note>
+      </trans-unit>
+      <trans-unit id="services-main-title" datatype="html">
+  <source>Soluciones a la Medida de tu Negocio</source>
+  <target>Tailored Solutions for Your Business</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <note priority="1" from="description">services main title</note>
+      </trans-unit>
+      <trans-unit id="services-main-description" datatype="html">
+  <source> Transformamos tus ideas en herramientas digitales potentes y eficientes que impulsan el crecimiento de tu empresa. </source>
+  <target>We transform your ideas into powerful and efficient digital tools that drive your company's growth.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+        <note priority="1" from="description">services main description</note>
+      </trans-unit>
+      <trans-unit id="fullstack-web-title" datatype="html">
+  <source>Desarrollo Web Full-Stack</source>
+  <target>Full-Stack Web Development</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <note priority="1" from="description">fullstack web title</note>
+      </trans-unit>
+      <trans-unit id="fullstack-web-description" datatype="html">
+  <source>Creamos sitios y plataformas web robustas, escalables y optimizadas. Desde un back-end potente hasta un front-end que enamora a tus usuarios.</source>
+  <target>We build robust, scalable, and optimized websites and platforms. From a powerful backend to a frontend that delights your users.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">19,23</context>
+        </context-group>
+        <note priority="1" from="description">fullstack web description</note>
+      </trans-unit>
+      <trans-unit id="mobile-apps-title" datatype="html">
+  <source>Aplicaciones Móviles</source>
+  <target>Mobile Applications</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <note priority="1" from="description">mobile apps title</note>
+      </trans-unit>
+      <trans-unit id="mobile-apps-description" datatype="html">
+  <source>Diseñamos y desarrollamos apps nativas e híbridas para iOS y Android que conectan con tu audiencia y ofrecen valor real en la palma de su mano.</source>
+  <target>We design and develop native and hybrid apps for iOS and Android that connect with your audience and deliver real value in the palm of their hand.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">29,33</context>
+        </context-group>
+        <note priority="1" from="description">mobile apps description</note>
+      </trans-unit>
+      <trans-unit id="process-title" datatype="html">
+  <source>Nuestro Proceso</source>
+  <target>Our Process</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <note priority="1" from="description">process title</note>
+      </trans-unit>
+      <trans-unit id="process-description" datatype="html">
+  <source>Un camino claro desde la idea hasta el lanzamiento.</source>
+  <target>A clear path from idea to launch.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+        <note priority="1" from="description">process description</note>
+      </trans-unit>
+      <trans-unit id="discovery-step-title" datatype="html">
+  <source>Descubrimiento</source>
+  <target>Discovery</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+        <note priority="1" from="description">discovery step title</note>
+      </trans-unit>
+      <trans-unit id="discovery-step-description" datatype="html">
+  <source>Entendemos tus metas y definimos el alcance del proyecto.</source>
+  <target>We understand your goals and define the project scope.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+        <note priority="1" from="description">discovery step description</note>
+      </trans-unit>
+      <trans-unit id="design-step-title" datatype="html">
+  <source>Diseño y Prototipo</source>
+  <target>Design and Prototype</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+        <note priority="1" from="description">design step title</note>
+      </trans-unit>
+      <trans-unit id="design-step-description" datatype="html">
+  <source>Creamos la experiencia de usuario y el diseño visual de tu aplicación.</source>
+  <target>We create the user experience and visual design for your application.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+        <note priority="1" from="description">design step description</note>
+      </trans-unit>
+      <trans-unit id="development-step-title" datatype="html">
+  <source>Desarrollo</source>
+  <target>Development</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <note priority="1" from="description">development step title</note>
+      </trans-unit>
+      <trans-unit id="development-step-description" datatype="html">
+  <source>Codificamos tu solución con las mejores prácticas y tecnologías.</source>
+  <target>We code your solution using best practices and technologies.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+        <note priority="1" from="description">development step description</note>
+      </trans-unit>
+      <trans-unit id="launch-step-title" datatype="html">
+  <source>Lanzamiento</source>
+  <target>Launch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+        <note priority="1" from="description">launch step title</note>
+      </trans-unit>
+      <trans-unit id="launch-step-description" datatype="html">
+  <source>Desplegamos la aplicación y te acompañamos en el lanzamiento.</source>
+  <target>We deploy the application and support you during the launch.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">71,76</context>
+        </context-group>
+        <note priority="1" from="description">launch step description</note>
+      </trans-unit>
+      <trans-unit id="cta-title" datatype="html">
+  <source>¿Listo para construir algo increíble?</source>
+  <target>Ready to build something amazing?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+        <note priority="1" from="description">cta title</note>
+      </trans-unit>
+      <trans-unit id="cta-description" datatype="html">
+  <source> Hablemos de tu proyecto. Contáctanos para una consulta gratuita y sin compromiso. </source>
+  <target>Let's talk about your project. Contact us for a free, no-obligation consultation.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">81,83</context>
+        </context-group>
+        <note priority="1" from="description">cta description</note>
+      </trans-unit>
+      <trans-unit id="cta-button" datatype="html">
+  <source>Hablemos de tu Proyecto</source>
+  <target>Let's talk about your project</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/public/services/services.html</context>
+          <context context-type="linenumber">83,85</context>
+        </context-group>
+        <note priority="1" from="description">cta button</note>
       </trans-unit>
     </body>
+      <trans-unit id="welcome-solutions-button" datatype="html">
+        <source>Nuestras Soluciones</source>
+        <target>Our Solutions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+        </context-group>
+        <note priority="1" from="description">welcome solutions button</note>
+      </trans-unit>
+      <trans-unit id="welcome-image-alt" datatype="html">
+        <source>Empresa de desarrollo de software especializada.</source>
+        <target>Specialized software development company.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/section-welcome/section-welcome.html</context>
+        </context-group>
+        <note priority="1" from="description">welcome image alt</note>
+      </trans-unit>
   </file>
 </xliff>

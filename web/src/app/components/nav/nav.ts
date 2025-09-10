@@ -14,4 +14,21 @@ export class Nav {
   toggle() {
     this.toggleDrawer.emit();
   } 
+
+  getCurrentLang(): string {
+    // Detect language from current URL path
+    const match = window.location.pathname.match(/^\/(es|en)(\/|$)/);
+    return match ? match[1] : 'es';
+  }
+
+  switchLang(event: Event) {
+    const lang = (event.target as HTMLSelectElement)?.value || 'es';
+    const path = window.location.pathname;
+    const match = path.match(/^\/(es|en)(\/.*)?$/);
+    let newPath = '/' + lang;
+    if (match && match[2]) {
+      newPath += match[2];
+    }
+    window.location.pathname = newPath;
+  }
 }

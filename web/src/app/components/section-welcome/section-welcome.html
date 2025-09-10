@@ -6,21 +6,19 @@
             <!-- Columna Izquierda: Contenido de Texto -->
             <div class="text-center lg:text-left">
                 <h2 class="text-primary-content text-4xl md:text-5xl font-extrabold text-primary mb-6 leading-tight">
-                    Bienvenido a Zencode.
+                        <span i18n="welcome title@@welcome-title">Bienvenido a Zencode</span>
                 </h2>
                 <p class="text-lg text-primary-content leading-relaxed">
-                    Somos una agencia de desarrollo de software enfocada en crear aplicaciones móviles y tiendas en
-                    línea de alto impacto. Con una filosofía de diseño minimalista, construimos plataformas potentes,
-                    intuitivas y atractivas que mejoran la experiencia de tus usuarios y hacen crecer tu negocio.
+                        <span i18n="welcome description@@welcome-description">Somos una agencia de desarrollo de software enfocada en crear aplicaciones móviles y tiendas en línea de alto impacto. Con una filosofía de diseño minimalista, construimos plataformas potentes, intuitivas y atractivas que mejoran la experiencia de tus usuarios y hacen crecer tu negocio.</span>
                 </p>
                 <div class="mt-10 flex justify-center lg:justify-start space-x-4">
                     <button routerLink="/services"
-                        class="btn btn-primary text-neutral btn-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="btn btn-primary text-neutral btn-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                        i18n="welcome solutions button@@welcome-solutions-button">
                         <span class="font-medium">Nuestras Soluciones</span>
                     </button>
-                    <button routerLink="/contact"
-                        class="btn btn-outline border-base-300 shadow-lg btn-lg hover:[background-color:rgb(38_38_38_/_0.25)]">
-                        <span class="font-medium text-primary">Contáctanos</span>
+                        <button routerLink="/contact" class="btn btn-outline border-base-300 shadow-lg btn-lg hover:[background-color:rgb(38_38_38_/_0.25)]" i18n="welcome cta@@welcome-cta">
+                            <span class="font-medium text-primary">Contáctanos</span>
                     </button>
                 </div>
             </div>
@@ -29,7 +27,7 @@
             <div class="flex justify-center lg:justify-end">
                 <div
                     class="w-full max-w-lg h-auto  transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <img src="img/web-development.webp" alt="Empresa de desarrollo de software especializada.">
+                    <img src="img/web-development.webp" alt="Empresa de desarrollo de software especializada." i18n-alt="welcome image alt@@welcome-image-alt">
                 </div>
             </div>
 
