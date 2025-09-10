@@ -1,6 +1,4 @@
-import { ApplicationConfig, LOCALE_ID, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
-import '@angular/common/locales/global/es';
-import '@angular/common/locales/global/en';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -27,20 +25,6 @@ export const appConfig: ApplicationConfig = {
     provideAnalytics(() => getAnalytics()),
 
     ScreenTrackingService,
-    UserTrackingService,
-    {
-      provide: LOCALE_ID,
-      useFactory: () => {
-        if (typeof window === 'undefined') return 'es';
-        const match = /^\/(es|en)(\/|$)/.exec(window.location.pathname);
-        if (match) {
-          localStorage.setItem('lang', match[1]);
-          return match[1];
-        }
-        const stored = localStorage.getItem('lang');
-        if (stored === 'es' || stored === 'en') return stored;
-        return (navigator.language.startsWith('en') ? 'en' : 'es');
-      }
-    }
+    UserTrackingService
   ]
 };
