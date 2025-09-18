@@ -11,8 +11,8 @@
     },
     "redirects": [
       {
-        "source": "/r/:code",
-        "destination": "/es/r/:code",
+        "source": "/r/**",
+        "destination": "/es/r/:splat",
         "type": 301
       }
     ],
