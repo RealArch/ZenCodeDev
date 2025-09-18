@@ -11,6 +11,10 @@
     },
     "rewrites": [
       {
+        "source": "/r/**",
+        "destination": "/es/r/**"
+      },
+      {
         "source": "/es/**",
         "function": "ssr"
       },
