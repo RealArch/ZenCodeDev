@@ -11,10 +11,6 @@
     },
     "rewrites": [
       {
-        "source": "/:path((?!es|en).*)",
-        "destination": "/es/:path"
-      },
-      {
         "source": "/es/**",
         "function": "ssr"
       },
