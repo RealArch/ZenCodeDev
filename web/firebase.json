@@ -10,7 +10,15 @@
       "region": "us-central1"
     },
     "rewrites": [
-
+      {
+        "source": "/r{,/**}",
+        "function": "ssr",
+        "path": "/es/r:path*"
+      },
+      {
+        "source": "**",
+        "function": "ssr"
+      }
     ]
   },
   "emulators": {
