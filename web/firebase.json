@@ -11,8 +11,8 @@
     },
     "rewrites": [
       {
-        "source": "/r/**",
-        "destination": "/es/r/**"
+        "source": "/:path((?!es|en).*)",
+        "destination": "/es/:path"
       },
       {
         "source": "/es/**",
