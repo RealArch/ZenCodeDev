@@ -1,13 +1,5 @@
 {
-  "hosting": {
-    "redirects": [
-      {
-        "source": "/r/:code",
-        "destination": "/es/r/:code",
-        "type": 301
-      }
-    ]
-  },
+
   "apphosting": {
     "backendId": "zencode-server",
     "rootDir": "/",

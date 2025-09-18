@@ -62,6 +62,16 @@ if (isMainModule(import.meta.url)) {
   });
 }
 
+// Manejar rutas /r/:code ANTES de las rutas localizadas
+app.get('/r/:code', (req, res) => {
+  // Detectar idioma preferido o usar default
+  const acceptLanguage = req.headers['accept-language'];
+  const preferredLang = acceptLanguage?.startsWith('es') ? 'es' : 'en';
+  
+  res.redirect(301, `/${preferredLang}/r/${req.params.code}`);
+});
+
+
 /**
  * Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.
  */
