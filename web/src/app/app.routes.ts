@@ -20,7 +20,7 @@ export const routes: Routes = [
         ]
     },
     {
-        path: 'es/r/:code',
+        path: ':lang/r/:code',
         loadComponent: () => import('./pages/public/redirect/redirect').then(m => m.Redirect),
         data: {
             renderMode: 'disable' // <- esto evita el prerendering en esa ruta
