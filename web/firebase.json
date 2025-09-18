@@ -9,14 +9,11 @@
     "frameworksBackend": {
       "region": "us-central1"
     },
-    "redirects": [
+    "rewrites": [
       {
         "source": "/r/**",
-        "destination": "/es/r/:splat",
-        "type": 301
-      }
-    ],
-    "rewrites": [
+        "destination": "/es/r/:splat"
+      },
       {
         "source": "/es/**",
         "function": "ssr"
