@@ -27,6 +27,17 @@ const angularApp = new AngularNodeAppEngine();
 /**
  * Serve static files from /browser
  */
+
+// Manejar rutas /r/:code ANTES de las rutas localizadas
+app.get('/r/:code', (req, res) => {
+  // Detectar idioma preferido o usar default
+  const acceptLanguage = req.headers['accept-language'];
+  const preferredLang = acceptLanguage?.startsWith('es') ? 'es' : 'en';
+  
+  res.redirect(301, `/${preferredLang}/r/${req.params.code}`);
+});
+
+
 app.use(
   express.static(browserDistFolder, {
     maxAge: '1y',
@@ -62,14 +73,7 @@ if (isMainModule(import.meta.url)) {
   });
 }
 
-// Manejar rutas /r/:code ANTES de las rutas localizadas
-app.get('/r/:code', (req, res) => {
-  // Detectar idioma preferido o usar default
-  const acceptLanguage = req.headers['accept-language'];
-  const preferredLang = acceptLanguage?.startsWith('es') ? 'es' : 'en';
-  
-  res.redirect(301, `/${preferredLang}/r/${req.params.code}`);
-});
+
 
 
 /**
