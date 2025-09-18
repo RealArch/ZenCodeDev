@@ -1,35 +1,22 @@
 {
   "hosting": {
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "source": ".",
-    "frameworksBackend": {
-      "region": "us-central1"
-    },
-    "rewrites": [
+    "redirects": [
       {
-        "source": "/r{,/**}",
-        "function": "ssr",
-        "path": "/es/r:path*"
-      },
-      {
-        "source": "**",
-        "function": "ssr"
+        "source": "/r/:code",
+        "destination": "/es/r/:code",
+        "type": 301
       }
     ]
   },
-  "emulators": {
-    "apphosting": {
-      "port": 5002,
-      "rootDirectory": "./",
-      "startCommand": "npm run dev"
-    },
-    "ui": {
-      "enabled": true
-    },
-    "singleProjectMode": true
+  "apphosting": {
+    "backendId": "zencode-server",
+    "rootDir": "/",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "functions"
+    ]
   }
 }
